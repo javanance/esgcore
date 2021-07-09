@@ -1,0 +1,181 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gof</groupId>
+  <artifactId>gesgcore</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+   <dependencies>
+  <dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.8</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+		<!-- <dependency> <groupId>com.mchange</groupId> <artifactId>c3p0</artifactId> 
+			<version>0.9.5.2</version> </dependency> -->
+
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-csv -->
+		<!-- <dependency> <groupId>com.fasterxml.jackson.dataformat</groupId> <artifactId>jackson-dataformat-csv</artifactId> 
+			<version>2.9.9</version> </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.easybatch/easybatch-core -->
+		<!-- <dependency> <groupId>org.easybatch</groupId> <artifactId>easybatch-core</artifactId> 
+			<version>5.2.0</version> </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.3.7.Final</version>
+		</dependency>
+		<dependency>
+		    <groupId>jakarta.xml.bind</groupId>
+		    <artifactId>jakarta.xml.bind-api</artifactId>
+		    <version>2.3.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8-production -->
+		<dependency>
+		    <groupId>com.oracle.database.jdbc</groupId>
+		    <artifactId>ojdbc8-production</artifactId>
+		    <version>19.8.0.0</version>
+		    <exclusions>
+		    <exclusion>
+		      <groupId>com.oracle.database.ha</groupId>
+		      <artifactId>simplefan</artifactId>
+		    </exclusion>
+		    <exclusion>
+		      <groupId>com.oracle.database.ha</groupId>
+		      <artifactId>ons</artifactId>
+		    </exclusion>
+		  </exclusions>
+		    <type>pom</type>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.easybatch/easybatch-flatfile -->
+		<!-- <dependency> <groupId>org.easybatch</groupId> <artifactId>easybatch-flatfile</artifactId> 
+			<version>5.2.0</version> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.easybatch/easybatch-opencsv -->
+		<!-- <dependency> <groupId>org.easybatch</groupId> <artifactId>easybatch-opencsv</artifactId> 
+			<version>5.2.0</version> </dependency> -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.26</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jboss.weld.se/weld-se-core -->
+		<!-- <dependency> <groupId>org.jboss.weld.se</groupId> <artifactId>weld-se-core</artifactId> 
+			<version>3.1.5.Final</version> </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.jboss.weld.se/weld-se-shaded -->
+		<dependency>
+			<groupId>org.jboss.weld.se</groupId>
+			<artifactId>weld-se-shaded</artifactId>
+			<version>4.0.0.CR1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jboss.weld.se/weld-se-shaded -->
+		<!-- <dependency>
+		    <groupId>org.jboss.weld.se</groupId>
+		    <artifactId>weld-se-shaded</artifactId>
+		    <version>3.1.5.Final</version>
+		</dependency> -->
+
+		<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>2.0.SP1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.26</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-c3p0</artifactId>
+			<version>5.3.7.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jeasy</groupId>
+			<artifactId>easy-batch-core</artifactId>
+			<!-- <version>7.0.1</version> -->
+			<version>6.1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.8</version>
+			<scope>provided</scope>
+		</dependency>
+  <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.12.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-math3</artifactId>
+		    <version>3.6.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.ejml/all -->
+		<dependency>
+		  <groupId>org.ejml</groupId>
+		  <artifactId>ejml-all</artifactId>
+		  <version>0.40</version>
+		</dependency>
+		
+  
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <release>11</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <!-- 
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <release>11</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build> -->
+</project>
